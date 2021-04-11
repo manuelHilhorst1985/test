@@ -1,0 +1,30 @@
+
+
+.container {
+    background-color: darkblue;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 150px 1fr;
+
+    &__img {
+        position: absolute;
+        border: cornflowerblue solid 1px;
+        height: 400px;
+        width: 400px;
+        &:hover {
+            opacity: 0;
+        }
+    }
+    &--btn {
+        position: relative;
+        opacity: 0;
+        height: 400px;
+        width: 400px;
+        grid-area: 1 / 1 / 2 / 2;
+        &:hover {
+            opacity: 1;
+        }
+        
+        
+    }
+}
